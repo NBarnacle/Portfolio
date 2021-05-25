@@ -1,0 +1,328 @@
+html, body {
+    height: 100%;
+    min-height: 100%; 
+  }
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.head{
+    width:100%;
+    height:15%;
+    background-color: black;}
+
+.headimg{
+        border-radius: 50%;
+        width:100px;
+        height:80%;
+        margin-top:10px;
+        margin-left:1.5%;
+        transition: transform .7s ease-in-out;
+        float:left;
+
+    }
+.hide{
+    display: none;
+}
+    .headimg:hover{
+        transform: rotate(720deg);
+    }
+#b{
+    color:rgb(71, 70, 75);
+    float:left;
+    font-size: 3rem;
+    margin-top: 17.5px;
+    margin-left:20px;
+}
+.mob{
+    display: inherit;
+    width:100%;
+    height: 5%;
+   background-color: rgb(20, 20, 20);
+   float: left;
+   border-top: rgb(68, 68, 68) 1px solid;
+}
+.mob:hover{
+    background-color: rgb(30,30,30);
+}
+.mob h4{
+font-size:1rem;
+color: lightslategray;
+text-align: center;
+
+}
+#v{
+    margin-top:1.5%;
+}
+#about{
+    margin-top: 15px;
+}
+.mob p{
+    font-size:.75rem;
+    text-align: center;
+    max-width: 60%;
+    margin-left:20%;
+    }
+head p{
+    color: rgb(71, 70, 75);
+}
+.grid{
+    width:100%;
+    height:85%;
+    background-color: black;
+    display:grid;
+    grid-template-columns:10% 80% 10%;
+    grid-template-rows: 65% 27% 8% ;
+}
+
+.projectimg{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    background-color: black;
+    background-image: url(images/proj8.png);
+   background-size: cover;
+   background-position: center;
+}
+.blurb{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+    background-color: black;
+    opacity: 80%;
+    color:rgb(255, 255, 255);
+    padding:2.5%;
+}
+.blurb p{
+    font-size: .75rem;
+}
+.nav{
+    margin-left:32.5%;
+}
+.nav button{
+    margin-left:2.5%;
+    border-radius: 50%;
+    width: 30px;
+    color:white;
+    background-color: black;
+}
+.nav button:hover{
+    color:black;
+    background-color: white;
+}
+a{
+    color: lightgray;
+}
+a:link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.75rem;
+    color:lightgray;
+    
+
+
+}
+a:visited{
+    color: lightgray;
+}
+a:hover{
+    color:white;
+}
+a:active {
+    color: white;
+  }
+@media (min-width: 768px){
+
+    .head{
+        width:25%;
+        height:100%;
+        float:left;
+        background-color: black;
+      
+    text-align: center;}
+
+    .head p{
+        width:80%;
+        margin-left:10%;
+        color:rgb(71, 70, 75);
+    }
+    .head h4{
+        width:80%;
+        margin-left:10%;
+        color:grey;
+    }
+    .mob{
+        display: none;
+    }
+    #b{
+        margin:0;
+        float:none;
+    }
+        .headimg{
+            border-radius: 50%;
+            width:150px;
+            height:150px;
+            margin-top:10%;
+            transition: transform .7s ease-in-out;
+            float:none
+
+        }
+        .headimg:hover{
+            transform: rotate(720deg);
+        }
+    .hide{
+        display: inherit;
+    }
+        .grid{
+    width:75%;
+    height:100%;
+    background-color: black;
+    display:grid;
+    float:left;
+    grid-template-columns:10% 80% 10%;
+    grid-template-rows: 70% 30% ;
+}
+.icon{
+    width:26.5%;
+    height:7.5%;
+    background-color: darkorange;
+    float:left;
+    margin-left:5%;
+    margin-top:20%;
+}
+.projectimg{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    background-color: black;
+    background-image: url(images/proj8.png);
+   background-size: cover;
+   background-position: center;
+}
+.blurb{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+    background-color: black;
+    opacity: 80%;
+    color:lightgray;
+    padding:2.5%;
+}
+.blurb p{
+    font-size: .775rem;
+}
+.nav{
+    margin-top:5%;
+    margin-left:40%;
+}
+.nav button{
+    margin-left:2.5%;
+    border-radius: 50%;
+    width: 30px;
+    color:white;
+    background-color: black;
+}
+.nav button:hover{
+    color:black;
+    background-color: white;
+}
+}
+
+@media (min-width: 1200px){
+
+    .head{
+        width:18%;
+        height:100%;
+        float:left;
+        background-color: black;
+      
+    text-align: center;}
+
+    .head p{
+        width:80%;
+        margin-left:10%;
+        color:rgb(71, 70, 75);
+    }
+    .head h4{
+        width:80%;
+        margin-left:10%;
+        color:grey;
+    }
+    h1{
+        float:none;
+    }
+        .headimg{
+            border-radius: 50%;
+            width:200px;
+            height:200px;
+            margin-top:10%;
+            transition: transform .7s ease-in-out;
+            float:none
+
+        }
+        .headimg:hover{
+            transform: rotate(720deg);
+        }
+    .hide{
+        display: inherit;
+    }
+        .grid{
+    width:82%;
+    height:100%;
+    background-color: black;
+    display:grid;
+    float:left;
+    grid-template-columns:10% 80% 10%;
+    grid-template-rows: 70% 30% ;
+}
+.icon{
+    width:26.5%;
+    height:7.5%;
+    background-color: darkorange;
+    float:left;
+    margin-left:5%;
+    margin-top:20%;
+}
+.projectimg{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    background-color: black;
+    background-image: url(images/proj8.png);
+   background-size: cover;
+   background-position: center;
+}
+.blurb{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+    background-color: black;
+    opacity: 80%;
+    color:lightgray;
+    padding:2.5%;
+}
+.blurb p{
+    font-size: 1rem;
+}
+.nav{
+    margin-left:40%;
+    margin-top:0;
+}
+.nav button{
+    margin-left:2.5%;
+    border-radius: 50%;
+    width: 30px;
+    color:white;
+    background-color: black;
+}
+.nav button:hover{
+    color:black;
+    background-color: white;
+}
+}
